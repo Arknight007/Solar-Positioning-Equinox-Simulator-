@@ -13,7 +13,7 @@ A Java-based interactive simulation that visualizes the position of the sun rela
 
 ## 🎥 Demo Video
 
-[![Watch the demo](video.mp4)
+![Watch the demo](video.mp4)
 
 ## ✨ Features
 
