@@ -1,174 +1,264 @@
-# 🌞 Solar Positioning Simulation
+<h1 align="center">🌞 Solar Positioning Simulation</h1>
 
-[![Java](https://img.shields.io/badge/Java-17-blue.svg)](https://www.java.com)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen.svg)]()
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)]()
+<p align="center">
+  <a href="https://www.java.com"><img alt="Java" src="https://img.shields.io/badge/Java-23-blue.svg"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/badge/License-MIT-green.svg"></a>
+  <img alt="Build Status" src="https://img.shields.io/badge/Build-Passing-brightgreen.svg">
+  <img alt="Version" src="https://img.shields.io/badge/Version-1.0.0-orange.svg">
+</p>
 
-A Java-based interactive simulation that visualizes the position of the sun relative to Earth at different times of the year, latitudes, and times of day.
+<p align="center">
+  A <strong>Java-based interactive simulation</strong> that visualizes the sun's position relative to Earth at various times of the year, latitudes, and times of day. This project combines <strong>astronomical concepts</strong> with <strong>educational interactivity</strong> for an engaging user experience.
+</p>
 
-## 📸 Screenshots
 
-![Solar Positioning Simulation](image.png)
+<h2>📸 Screenshots</h2>
+<p align="center">
+  <img src="image.png" alt="Solar Positioning Simulation">
+</p>
 
-## 🎥 Demo Video
 
-![Watch the demo](video.mp4)
+<h2>🎥 Demo Video</h2>
+<p align="center">
+  <a href="video.mp4"><img alt="Watch the Demo" src="https://img.shields.io/badge/Video-Demo-red"></a>
+</p>
 
-## ✨ Features
 
-- **Interactive Solar Position Visualization**
-  - Real-time sun position calculation
-  - Adjustable parameters (day, latitude, time)
-  - Smooth animation controls
+<h2> Features</h2>
 
-- **Astronomical Events**
-  - Spring Equinox
-  - Summer Solstice
-  - Fall Equinox
-  - Winter Solstice
+<h3>🌍 Interactive Solar Position Visualization</h3>
+<ul>
+  <li><strong>Real-time Sun Position Calculation</strong> based on time, latitude, and day of the year.</li>
+  <li><strong>Adjustable Parameters</strong>: Day, latitude, and time.</li>
+  <li><strong>Smooth Animation Controls</strong> for enhanced simulation.</li>
+</ul>
 
-- **Educational Information**
-  - Scientific notes
-  - Astronomical concepts
-  - Real-time updates
+<h3>🌌 Astronomical Events</h3>
+<ul>
+  <li>Simulate significant astronomical phenomena:</li>
+  <ul>
+    <li><strong>Spring Equinox</strong></li>
+    <li><strong>Summer Solstice</strong></li>
+    <li><strong>Fall Equinox</strong></li>
+    <li><strong>Winter Solstice</strong></li>
+  </ul>
+</ul>
 
-## 🛠️ Installation
+<h3> Educational Information</h3>
+<ul>
+  <li><strong>Scientific Notes</strong> to explain concepts.</li>
+  <li><strong>Real-time Updates</strong> for interactive learning.</li>
+  <li><strong>Astronomical Concept Integrations</strong> for deeper understanding.</li>
+</ul>
 
-1. **Prerequisites**
-   ```bash
-   - Java 17 or higher
-   - Git (optional)
-   ```
 
-2. **Clone the Repository**
-   ```bash
-   git clone https://github.com/yourusername/solar-positioning-simulation.git
-   cd solar-positioning-simulation
-   ```
+<h2> Getting Started</h2>
 
-3. **Build and Run**
-   ```bash
-   # Compile
-   javac src/*.java
-   
-   # Run
-   java -cp src MainFrame
-   ```
+<h3>Prerequisites</h3>
+<p>Ensure you have the following installed:</p>
+<pre>
+<code>
+- Java 23 or higher
+- Git (optional)
+	- Gitlens
+</code>
+</pre>
 
-## 📁 Project Structure
+<h3>Installation</h3>
+<ol>
+  <li><strong>Clone the Repository</strong></li>
+  <pre>
+  <code>
+  git clone https://github.com/Arknight007/Solar-Positioning-Equinox-Simulator-.git
+  cd Solar-Positioning-Equinox-Simulator-
+  </code>
+  </pre>
 
-```
-solar-positioning-simulation/
+  <li><strong>Build</strong></li>
+  <pre>
+  <code>
+  # Compile
+  javac src/*.java
+  
+  <li><strong>Run</strong></li>
+  java -cp src MainFrame
+  </code>
+  </pre>
+</ol>
+
+---
+
+<h2>📂 Project Structure</h2>
+
+<pre>
+<code>
+Solar-Positioning-Simulation/
 ├── src/
-│   ├── MainFrame.java
-│   ├── SimulationPanel.java
-│   ├── ControlPanel.java
-│   ├── ControlPanelSetup.java
-│   ├── InfoPanel.java
-│   ├── CustomSlider.java
-│   └── SpecialDayButton.java
-├── image.png
-├── video.mp4
-└── README.md
-```
+│   ├── MainFrame.java          # Main application window
+│   ├── SimulationPanel.java    # 2D simulation and calculations
+│   ├── ControlPanel.java       # Parameter adjustments
+│   ├── ControlPanelSetup.java  # UI setup and event handling
+│   ├── InfoPanel.java          # Info display and updates
+│   ├── CustomSlider.java       # Sliders for parameter control
+│   └── SpecialDayButton.java   # Buttons for astronomical events
+└── README.md                   # Documentation
+</code>
+</pre>
 
-## 🧩 Components
+---
 
-### MainFrame
-- Main application window
-- Component coordination
-- Layout management
+<h2>🧩 Components Overview</h2>
 
-### SimulationPanel
-- Solar position calculations
-- 2D visualization
-- Real-time updates
+<h3>MainFrame</h3>
+<ul>
+  <li><strong>Role</strong>: Acts as the primary application window.</li>
+  <li><strong>Responsibilities</strong>: Component coordination, layout management.</li>
+</ul>
 
-### ControlPanel
-- User interface controls
-- Parameter adjustment
-- Animation management
+<h3>SimulationPanel</h3>
+<ul>
+  <li><strong>Role</strong>: Handles solar position calculations and 2D visualization.</li>
+  <li><strong>Features</strong>: Real-time updates, smooth animations.</li>
+</ul>
 
-### ControlPanelSetup
-- UI component initialization
-- Event handling setup
-- Layout configuration
+<h3>ControlPanel</h3>
+<ul>
+  <li><strong>Role</strong>: Provides user controls for adjusting parameters.</li>
+  <li><strong>Features</strong>: Animation speed, event selection, time controls.</li>
+</ul>
 
-### InfoPanel
-- Scientific information display
-- Concept explanations
-- State updates
+<h3>ControlPanelSetup</h3>
+<ul>
+  <li><strong>Role</strong>: Initializes UI components and event handling.</li>
+  <li><strong>Features</strong>: Layout configuration, interactive setup.</li>
+</ul>
 
-### CustomSlider
-- Parameter control
-- Range-specific labels
-- Smooth interaction
+<h3>InfoPanel</h3>
+<ul>
+  <li><strong>Role</strong>: Displays scientific data and explanations.</li>
+  <li><strong>Features</strong>: Real-time updates, concept clarifications.</li>
+</ul>
 
-### SpecialDayButton
-- Astronomical event selection
-- Quick state updates
-- Event-specific styling
+<h3>CustomSlider</h3>
+<ul>
+  <li><strong>Role</strong>: Interactive sliders for parameter adjustments.</li>
+  <li><strong>Features</strong>: Smooth interaction, range-specific labels.</li>
+</ul>
 
-## 🔧 Usage
+<h3>SpecialDayButton</h3>
+<ul>
+  <li><strong>Role</strong>: Quick access to astronomical events.</li>
+  <li><strong>Features</strong>: Event-specific styling, state updates.</li>
+</ul>
 
-1. **Adjust Parameters**
-   - Use sliders to modify:
-     - Day of year
-     - Latitude
-     - Time of day
+---
 
-2. **Special Events**
-   - Click buttons for:
-     - Spring Equinox
-     - Summer Solstice
-     - Fall Equinox
-     - Winter Solstice
+<h2>🔧 Usage Instructions</h2>
 
-3. **Animation Control**
-   - Start/Stop simulation
-   - Adjust animation speed
-   - Observe special events
+<h3>1. Adjust Parameters</h3>
+<ul>
+  <li>Use sliders to modify:</li>
+  <ul>
+    <li><strong>Day of the Year</strong></li>
+    <li><strong>Latitude</strong></li>
+    <li><strong>Time of Day</strong></li>
+  </ul>
+</ul>
 
-## 📊 Technical Details
+<h3>2. Simulate Special Events</h3>
+<ul>
+  <li>Click buttons to:</li>
+  <ul>
+    <li><strong>Spring Equinox</strong></li>
+    <li><strong>Summer Solstice</strong></li>
+    <li><strong>Fall Equinox</strong></li>
+    <li><strong>Winter Solstice</strong></li>
+  </ul>
+</ul>
 
-### Solar Position Calculation
-```java
+<h3>3. Control Animation</h3>
+<ul>
+  <li><strong>Start/Stop Simulation</strong></li>
+  <li><strong>Adjust Animation Speed</strong></li>
+  <li>Observe real-time solar positioning changes.</li>
+</ul>
+
+---
+
+<h2>📊 Technical Details</h2>
+
+<h3>Solar Position Calculation</h3>
+<pre>
+<code>
 // Example calculation
 double declination = calculateDeclination(dayOfYear);
 double hourAngle = calculateHourAngle(timeOfDay);
 double elevation = calculateElevation(declination, hourAngle, latitude);
-```
+</code>
+</pre>
 
-### Animation System
-```java
+<h3>Animation System</h3>
+<pre>
+<code>
 // Animation timer setup
 Timer animationTimer = new Timer(50, e -> {
     updateSimulation();
     repaint();
 });
-```
+</code>
+</pre>
 
-## 🤝 Contributing
+---
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+<h2>🤝 Contributing</h2>
+<p>We welcome contributions from the community! To get started:</p>
+<ol>
+  <li><strong>Fork the Repository</strong>.</li>
+  <li><strong>Create a Feature Branch</strong>:</li>
+  <pre>
+  <code>
+  git checkout -b feature/AmazingFeature
+  </code>
+  </pre>
+  <li><strong>Commit Your Changes</strong>:</li>
+  <pre>
+  <code>
+  git commit -m 'Add AmazingFeature'
+  </code>
+  </pre>
+  <li><strong>Push the Branch</strong>:</li>
+  <pre>
+  <code>
+  git push origin feature/AmazingFeature
+  </code>
+  </pre>
+  <li><strong>Open a Pull Request</strong>.</li>
+</ol>
 
-## 📝 License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<h2>📝 License</h2>
+<p>This project is licensed under the MIT License. See the <a href="LICENSE">LICENSE</a> file for more details.</p>
 
-## 🙏 Acknowledgments
+---
 
-- Astronomical calculations based on standard formulas
-- UI design inspired by modern scientific applications
-- Special thanks to contributors and testers
+<h2>🙏 Acknowledgments</h2>
+<ul>
+  <li><strong>Astronomical Formulas</strong>: Based on standard and verified calculations.</li>
+  <li><strong>UI Design</strong>: Inspired by modern scientific applications.</li>
+  <li><strong>Contributors and Testers</strong>: Special thanks for your support and feedback.</li>
+</ul>
 
-## 📧 Contact
+---
 
-Your Name - [@yourtwitter](https://twitter.com/yourtwitter) - email@example.com
+<h2>📧 Contact</h2>
+<ul>
+  <li><strong>Author</strong>: Arknight007</li>
+  <li><strong>Email</strong>: <a href="mailto:knightark007@gmail.com">email@example.com</a></li>
+  <li><strong>Project Link</strong>: <a href="https://github.com/Arknight007/Solar-Positioning-Equinox-Simulator-">Solar Positioning Simulation</a></li>
+</ul>
 
-Project Link: [https://github.com/yourusername/solar-positioning-simulation](https://github.com/yourusername/solar-positioning-simulation) 
+---
+
+<h2 align="center">🌟 Star the Project</h2>
+<p align="center">If you find this project useful or interesting, don't forget to <strong>star</strong> the repository!</p>
