@@ -1,0 +1,65 @@
+@startuml Solar Positioning Simulation Architecture
+
+' Styling
+skinparam componentStyle rectangle
+skinparam backgroundColor white
+skinparam defaultFontName JetBrains Mono
+skinparam defaultFontSize 12
+skinparam defaultTextAlignment center
+skinparam component {
+    BackgroundColor LightBlue
+    BorderColor DarkBlue
+    ArrowColor DarkBlue
+}
+
+' Main Components
+package "Solar Positioning Simulation" {
+    [MainFrame] as main
+    [SimulationPanel] as sim
+    [ControlPanel] as control
+    [ControlPanelSetup] as setup
+    [InfoPanel] as info
+    [CustomSlider] as slider
+    [SpecialDayButton] as button
+}
+
+' Dependencies
+main --> sim : contains
+main --> control : contains
+control --> setup : uses
+control --> info : contains
+control --> slider : uses
+control --> button : uses
+
+' Component Details
+note right of sim
+  Handles solar position
+  calculations and rendering
+end note
+
+note right of control
+  Main control interface
+  Manages user interactions
+end note
+
+note right of setup
+  Handles UI component
+  initialization and setup
+end note
+
+note right of info
+  Displays scientific
+  information
+end note
+
+note right of slider
+  Custom slider component
+  for parameter control
+end note
+
+note right of button
+  Special day selection
+  buttons
+end note
+
+@enduml 
