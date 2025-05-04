@@ -10,15 +10,6 @@
 <p align="center">
   A <strong>Java-based interactive simulation</strong> that visualizes the sun's position relative to Earth at various times of the year, latitudes, and times of day. This project combines <strong>astronomical concepts</strong> with <strong>educational interactivity</strong> for an engaging user experience.
 </p>
-
-
-<h2>📸 Screenshots</h2>
-<p align="center">
-  <img src="image.png" alt="Solar Positioning Simulation">
-</p>
-
-
-<h2>🎥 Demo Video</h2>
 <p align="center">
   <img src="video.gif" alt="Solar Positioning Simulation">
 </p>
