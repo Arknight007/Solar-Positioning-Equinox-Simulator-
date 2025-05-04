@@ -20,7 +20,7 @@
 
 <h2>🎥 Demo Video</h2>
 <p align="center">
-  <a href="video.mp4"><img alt="Watch the Demo" src="https://img.shields.io/badge/Video-Demo-red"></a>
+  <img src="video.gif" alt="Solar Positioning Simulation">
 </p>
 
 
